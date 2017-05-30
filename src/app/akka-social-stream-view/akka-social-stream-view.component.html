@@ -1,0 +1,5 @@
+<md-card *ngFor="let feed of feeds">
+  <md-card-title>{{feed.feed}}</md-card-title>
+  <md-card-subtitle>{{feed.user}} - {{feed.date | date:'dd-MM-yyyy'}}</md-card-subtitle>
+  <md-card-content [innerHTML]="feed.message"></md-card-content>
+</md-card>
